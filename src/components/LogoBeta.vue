@@ -4,7 +4,7 @@ defineProps(
     {
       width: {
         type: Number,
-        default: 32,
+        default: 90,
         required: false
       },
       height: {
@@ -18,10 +18,10 @@ defineProps(
 <template>
   <div class="logo">
     <Image
-        src="/src/assets/logo.svg"
+        src="/src/assets/logo_beta.svg"
         :height="height"
         :width="width"
-        alt="Visualsoft Logo"
+        alt="Visualsoft Beta Logo"
     />
   </div>
 </template>

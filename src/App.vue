@@ -1,24 +1,25 @@
 <script setup>
 import PageHeader from './components/PageHeader.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import PageFilter from './components/PageFilter.vue'
+import ProductList from './components/ProductList.vue'
+import PageFooter from './components/PageFooter.vue'
 </script>
 
 <template>
   <header>
     <PageHeader />
   </header>
-
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld class="text-3xl underline" msg="You did it!" />
-    </div>
-  </header>
-
+  <aside>
+    <PageFilter />
+  </aside>
   <main>
-    <TheWelcome />
+    <div class="container">
+      <ProductList />
+    </div>
   </main>
+  <footer>
+    <PageFooter />
+  </footer>
 </template>
 
 <style scoped>

@@ -1,61 +1,54 @@
+<script setup>
+import Logo from './Logo.vue'
+import Navigation from './Navigation.vue'
+
+const FooterMenuNav = [
+  {url: '#', title: 'Terms & conditions', className: 'selected' },
+  {url: '#', title: 'Help'},
+  {url: '#', title: 'FAQ'},
+  {url: '#', title: 'Privacy'},
+  {url: '#', title: 'Cookies'},
+  {url: '#', title: 'Knowledge'},
+  {url: '#', title: 'Feature hub'},
+  {url: '#', title: 'Documents'},
+  {url: '#', title: 'Templates'}
+];
+</script>
 <template>
-  <footer class="footer">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-sm-auto align-content-center">
-          <div class="logo">
-            <img src="./assets/logo.svg" height="40" width="32" alt="Visualsoft Logo">
-          </div>
-        </div>
-        <div class="col-sm-auto align-content-center">
-          <nav>
-            <ul class="menu">
-              <li><a href="#">Terms &amp; conditions</a></li>
-              <li><a href="#">Help</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Cookies</a></li>
-              <li><a href="#">Knowledge</a></li>
-              <li><a href="#">Feature hub</a></li>
-              <li><a href="#">Documents</a></li>
-              <li><a href="#">Templates</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="col-sm-auto align-content-center">
-          <div class="copyright">
-            &copy; Visualsoft 2021
-          </div>
+  <div class="container m-auto">
+    <div class="w-full flex flex-nowrap">
+      <div class="content-end w-auto">
+        <Logo />
+      </div>
+      <div class="content-end w-auto lg:flex-grow-1 flex-grow">
+        <Navigation
+            class-name="bottom-nav"
+            :navigation="FooterMenuNav"
+        />
+      </div>
+      <div class="content-end w-auto">
+        <div class="copyright">
+          &copy; Visualsoft 2021
         </div>
       </div>
     </div>
-  </footer>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'PageFooter',
-  props: {
-    // msg: String
-  }
+<style>
+footer .menu
+{
+  font-size: 0.875rem;
 }
-</script>
 
+footer .menu a
+{
+  color: #646464;
+  padding: 0.5rem;
+}
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.copyright
+{
+  margin: 1rem 0;
 }
 </style>
