@@ -1,9 +1,9 @@
 <script setup>
-import Navigation from './Navigation.vue'
+import Navigation from '@/components/Navigation.vue'
 
 const SecondaryMenuName = 'secondary-nav';
 const SecondaryMenuNav = [
-  {url: '#', title: 'All', selected: true },
+  {url: '#', title: 'All', className: 'selected'},
   {url: '#', title: 'Groups'},
   {url: '#', title: 'Segments'}
 ];

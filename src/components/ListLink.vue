@@ -1,5 +1,5 @@
 <script setup>
-import Link from './Link.vue'
+import Link from '@/components/elements/Link.vue'
 defineProps(
     {
       href: {

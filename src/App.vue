@@ -1,8 +1,8 @@
 <script setup>
-import PageHeader from './components/PageHeader.vue'
-import PageFilter from './components/PageFilter.vue'
-import ProductList from './components/ProductList.vue'
-import PageFooter from './components/PageFooter.vue'
+import PageHeader from '@/components/page/layout/PageHeader.vue'
+import PageFilter from '@/components/page/layout/PageFilter.vue'
+import PageFooter from '@/components/page/layout/PageFooter.vue'
+import ProductList from '@/components/ProductList.vue'
 </script>
 
 <template>
@@ -13,9 +13,7 @@ import PageFooter from './components/PageFooter.vue'
     <PageFilter />
   </aside>
   <main>
-    <div class="container">
-      <ProductList />
-    </div>
+    <ProductList />
   </main>
   <footer>
     <PageFooter />

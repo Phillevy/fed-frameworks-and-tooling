@@ -1,5 +1,5 @@
 <script setup>
-import ListLink from './ListLink.vue'
+import ListLink from '@/components/ListLink.vue'
 defineProps(
     {
       className: {

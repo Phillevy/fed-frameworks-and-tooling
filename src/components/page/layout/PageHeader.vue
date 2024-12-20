@@ -1,7 +1,7 @@
 <script setup>
-import Logo from './LogoBeta.vue'
-import Inventory from './Inventory.vue'
-import Navigation from './Navigation.vue'
+import Logo from '@/components/icons/LogoBeta.vue'
+import Inventory from '@/components/Inventory.vue'
+import Navigation from '@/components/Navigation.vue'
 
 const TopMenuNav = [
   {url: '#', title: 'Products', className: 'selected' },

@@ -1,5 +1,5 @@
 <script setup>
-import Menu from './ListLinks.vue'
+import Menu from '@/components/ListLinks.vue'
 defineProps(
     {
       className: {

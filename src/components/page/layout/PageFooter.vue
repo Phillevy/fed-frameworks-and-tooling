@@ -1,9 +1,9 @@
 <script setup>
-import Logo from './Logo.vue'
-import Navigation from './Navigation.vue'
+import Logo from '@/components/icons/Logo.vue'
+import Navigation from '@/components/Navigation.vue'
 
 const FooterMenuNav = [
-  {url: '#', title: 'Terms & conditions', className: 'selected' },
+  {url: '#', title: 'Terms & conditions'},
   {url: '#', title: 'Help'},
   {url: '#', title: 'FAQ'},
   {url: '#', title: 'Privacy'},
@@ -16,17 +16,17 @@ const FooterMenuNav = [
 </script>
 <template>
   <div class="container m-auto">
-    <div class="w-full flex flex-nowrap">
+    <div class="w-full flex flex-nowrap justify-between">
       <div class="content-end w-auto">
         <Logo />
       </div>
-      <div class="content-end w-auto lg:flex-grow-1 flex-grow">
+      <div class="w-auto lg:flex-grow-0 flex-grow content-center">
         <Navigation
             class-name="bottom-nav"
             :navigation="FooterMenuNav"
         />
       </div>
-      <div class="content-end w-auto">
+      <div class="w-auto content-center">
         <div class="copyright">
           &copy; Visualsoft 2021
         </div>
