@@ -29,7 +29,9 @@ defineProps(
       :id="id"
   >
     <Icon :name="icon"  />
-    {{ title }}
+    <span>
+      {{ title }}
+    </span>
   </button>
 </template>
 

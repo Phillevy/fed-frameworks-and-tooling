@@ -27,23 +27,24 @@ import Button from "@/components/elements/Button.vue";
       </div>
 
       <div class="page-content">
-        <div class="page-content-header">
-          <div class="row">
-            <div class="col-auto flex-grow-1">
-              <Button
-                  title="Filters"
-                  icon="filter"
-                  class-name="button--secondary"
-              />
-            </div>
-            <div class="col-auto">
-              <p id="page-details"></p>
-            </div>
+        <div class="page-content-header flex">
+          <div class="w-auto grow">
+            <Button
+                title="Filters"
+                icon="filter"
+                class-name="button--secondary"
+            />
+          </div>
+          <div class="w-auto">
+            <p id="page-details">1-15 of 20</p>
           </div>
         </div>
 
         <div class="page-content-data">
-          <table class="alternate-rows" id="page-content-data__table">
+          <table
+              class="alternate-rows"
+              id="page-content-data__table"
+          >
             <thead>
             <tr>
               <th>Image</th>
@@ -55,44 +56,69 @@ import Button from "@/components/elements/Button.vue";
             </tr>
             </thead>
             <tbody>
+            <tr>
+              <td><div class="imgbox"></div></td>
+              <td><a href="#">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</a></td>
+              <td>1</td>
+              <td>Men’s clothing</td>
+              <td>3.9 (120)</td>
+              <td>£109.95</td>
+            </tr>
+            <tr>
+              <td><div class="imgbox"></div></td>
+              <td><a href="#">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</a></td>
+              <td>1</td>
+              <td>Men’s clothing</td>
+              <td>3.9 (120)</td>
+              <td>£109.95</td>
+            </tr>
+            <tr>
+              <td><div class="imgbox"></div></td>
+              <td><a href="#">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</a></td>
+              <td>1</td>
+              <td>Men’s clothing</td>
+              <td>3.9 (120)</td>
+              <td>£109.95</td>
+            </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="page-content-footer">
-          <div class="row justify-content-end">
-            <div class="col-auto">
-              <div class="pagination pagination--no-text">
-                <Button
-                    title="First Page"
-                    id="first-button"
-                    icon="angle-double-left"
-                    class-name="button--secondary"
-                />
-                <Button
-                    title="Previous Page"
-                    id="previous-button"
-                    icon="angle-left"
-                    class-name="button--secondary"
-                />
-                <div class="page d-inline-block">Page
-                  <span class="button button--secondary" id="page-number">1</span> of
-                  <span id="total-pages"></span>
-                </div>
-                <Button
-                    title="Next Page"
-                    id="next-button"
-                    icon="angle-right"
-                    class-name="button--secondary"
-                />
-                <Button
-                    title="Last Page"
-                    id="last-button"
-                    icon="angle-double-right"
-                    class-name="button--secondary"
-                />
-              </div>
+        <div class="page-content-footer flex justify-end">
+          <div class="pagination pagination--no-text flex items-center p-4">
+            <Button
+                title="First Page"
+                id="first-button"
+                icon="angle-double-left"
+                class-name="button--secondary m-2"
+            />
+            <Button
+                title="Previous Page"
+                id="previous-button"
+                icon="angle-left"
+                class-name="button--secondary m-2"
+            />
+            <div class="page flex items-center">
+              Page
+              <Button
+                  title="1"
+                  id="page-number"
+                  class-name="button--secondary m-2"
+              /> of
+              <span id="total-pages"></span>
             </div>
+            <Button
+                title="Next Page"
+                id="next-button"
+                icon="angle-right"
+                class-name="button--secondary m-2"
+            />
+            <Button
+                title="Last Page"
+                id="last-button"
+                icon="angle-double-right"
+                class-name="button--secondary m-2"
+            />
           </div>
         </div>
       </div>
@@ -120,3 +146,25 @@ import Button from "@/components/elements/Button.vue";
 
   <div id="overlay" class="filter-button"></div>
 </template>
+
+<style>
+  .page-navigation {
+    @apply pb-8;
+  }
+  .page-content
+  {
+    @apply bg-white shadow-sm rounded-2xl;
+  }
+  .page-content-header
+  {
+    @apply p-8;
+  }
+  .pagination button span
+  {
+    display: none;
+  }
+  .pagination .page button span
+  {
+    display: inline-block;
+  }
+</style>

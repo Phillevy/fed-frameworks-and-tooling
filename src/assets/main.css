@@ -1,2 +1,51 @@
 @import './base.css';
 @import './icons.css';
+
+@layer base {
+    h1 {
+        @apply text-3xl;
+    }
+    h2 {
+        @apply text-xl;
+    }
+    main {
+        @apply pt-8 pb-8;
+        @apply bg-gray-200;
+    }
+
+    table {
+        @apply w-full border-0 p-0 border-spacing-0;
+    }
+    th,
+    td
+    {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #E1E1E1;
+    }
+
+    th:first-child,
+    td:first-child
+    {
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    th:last-child,
+    td:last-child
+    {
+        padding-right: 1rem;
+    }
+
+    table.alternate-rows tr td,
+    table.alternate-rows tr th
+    {
+        border: none;
+    }
+
+    table.alternate-rows tr:nth-child(odd) td
+    {
+        background-color: #F2F2F2;
+    }
+
+}

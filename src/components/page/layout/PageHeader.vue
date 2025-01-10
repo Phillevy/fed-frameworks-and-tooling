@@ -14,14 +14,14 @@ const TopMenuNav = [
 <template>
   <div class="header">
     <div class="container m-auto">
-      <div class="w-full flex flex-nowrap">
+      <div class="w-full flex flex-wrap">
         <div class="content-end w-auto">
           <Logo />
         </div>
-        <div class="content-end w-auto lg:flex-grow-0 flex-grow">
+        <div class="content-end w-auto grow md:grow-0">
           <Inventory />
         </div>
-        <div class="content-end w-auto order-6">
+        <div class="content-end w-auto md:order-last">
           <div class="user">
             <div class="user-company">Volkswagon</div>
             <div class="account">
@@ -29,7 +29,7 @@ const TopMenuNav = [
             </div>
           </div>
         </div>
-        <div class="content-end w-auto lg:flex-grow-1 flex-grow">
+        <div class="content-end w-full md:w-auto grow">
           <Navigation
               class-name="top-nav"
               :navigation="TopMenuNav"
