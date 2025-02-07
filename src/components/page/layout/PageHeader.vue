@@ -1,14 +1,16 @@
 <script setup>
+import { ref } from 'vue'
+
 import Logo from '@/components/icons/LogoBeta.vue'
 import Inventory from '@/components/Inventory.vue'
 import Navigation from '@/components/Navigation.vue'
 
-const TopMenuNav = [
+const TopMenuNav = ref([
   {url: '#', title: 'Products', className: 'selected' },
   {url: '#', title: 'Reviews'},
   {url: '#', title: 'Requests'},
   {url: '#', title: 'Appointments'}
-];
+]);
 </script>
 
 <template>
@@ -41,6 +43,9 @@ const TopMenuNav = [
 </template>
 
 <style>
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .logo
 {
   padding: 1rem 0 1.3rem 0;
@@ -93,5 +98,11 @@ const TopMenuNav = [
   font-size: 0.8rem;
   line-height: 1.2rem;
   font-weight: normal;
+}
+
+.filters
+{
+  background-color: #040138;
+  color: #FFFFFF;
 }
 </style>

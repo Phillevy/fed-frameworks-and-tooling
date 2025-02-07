@@ -1,8 +1,10 @@
 <script setup>
+import { ref } from 'vue'
+
 import Logo from '@/components/icons/Logo.vue'
 import Navigation from '@/components/Navigation.vue'
 
-const FooterMenuNav = [
+const FooterMenuNav = ref([
   {url: '#', title: 'Terms & conditions'},
   {url: '#', title: 'Help'},
   {url: '#', title: 'FAQ'},
@@ -12,7 +14,7 @@ const FooterMenuNav = [
   {url: '#', title: 'Feature hub'},
   {url: '#', title: 'Documents'},
   {url: '#', title: 'Templates'}
-];
+]);
 </script>
 <template>
   <div class="container m-auto">
@@ -36,6 +38,8 @@ const FooterMenuNav = [
 </template>
 
 <style>
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer .menu
 {
   font-size: 0.875rem;

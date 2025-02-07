@@ -1,33 +1,26 @@
 <script setup>
-import Navigation from '@/components/Navigation.vue'
-
-const SecondaryMenuName = 'secondary-nav';
-const SecondaryMenuNav = [
-  {url: '#', title: 'All', className: 'selected'},
-  {url: '#', title: 'Groups'},
-  {url: '#', title: 'Segments'}
-];
+import Button from "@/components/elements/Button.vue";
 </script>
 
 <template>
-  <div class="filters">
-    <div class="container m-auto">
-      <div class="w-full flex flex-nowrap">
-        <div class="content-end w-auto">
-          <Navigation
-              :class-name="SecondaryMenuName"
-              :navigation="SecondaryMenuNav"
-          />
-        </div>
+  <aside class="panel" id="filter-panel">
+    <div class="panel__header">
+      <div class="panel__title">Filters</div>
+      <div class="panel__close-button filter-button">
+        <i class="fa-solid fa-close"></i><span> Close Filter</span>
       </div>
     </div>
-  </div>
+    <div class="panel__content-wrapper">
+      <div class="panel__content" id="filter_groups">
+      </div>
+      <div class="panel__footer">
+        <Button
+            title="Apply Filter"
+            id="apply-filter"
+            class-name="button--secondary"
+        />
+      </div>
+    </div>
+  </aside>
 </template>
 
-<style>
-  .filters
-  {
-    background-color: #040138;
-    color: #FFFFFF;
-  }
-</style>

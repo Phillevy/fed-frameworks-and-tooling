@@ -24,6 +24,8 @@ defineProps(
 </template>
 
 <style>
+/* Menu
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .menu
 {
   margin: 1rem 0;

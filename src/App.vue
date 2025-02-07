@@ -1,6 +1,6 @@
 <script setup>
 import PageHeader from '@/components/page/layout/PageHeader.vue'
-import PageFilter from '@/components/page/layout/PageFilter.vue'
+import PageSubMenu from '@/components/page/layout/PageSubMenu.vue'
 import PageFooter from '@/components/page/layout/PageFooter.vue'
 import ProductList from '@/components/ProductList.vue'
 </script>
@@ -10,7 +10,7 @@ import ProductList from '@/components/ProductList.vue'
     <PageHeader />
   </header>
   <aside>
-    <PageFilter />
+    <PageSubMenu />
   </aside>
   <main>
     <ProductList />
