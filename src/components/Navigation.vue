@@ -64,7 +64,7 @@ defineProps(
   color: #1EAEDB;
 }
 
-@media (min-width: 576px)
+@media (min-width: 775px)
 {
   .menu
   {
