@@ -15,6 +15,7 @@ defineProps(
     }
 )
 </script>
+
 <template>
   <div class="logo">
     <Image

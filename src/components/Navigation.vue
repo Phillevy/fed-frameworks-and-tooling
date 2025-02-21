@@ -17,31 +17,23 @@ defineProps(
 <template>
   <nav :class="className">
     <Menu
-        class="menu"
+        class="menu md:my-0 my-4 md:pb-0 pb-4 list-none"
         :list="navigation"
     />
   </nav>
 </template>
 
-<style>
-/* Menu
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.menu
-{
-  margin: 1rem 0;
-  padding: 0 0 1rem 0;
-  list-style: none;
-}
+<style scoped>
 
-.menu li
+.menu :deep(li)
 {
-  display: block;
+  @apply block;
   margin: 0;
   list-style: none;
   width: 100%;
 }
 
-.menu li a
+.menu :deep(li a)
 {
   margin: 0;
   display: inherit;
@@ -54,37 +46,31 @@ defineProps(
   border-bottom: 1px solid #ccc;
 }
 
-.menu li.selected a
+.menu :deep(li.selected a)
 {
   border-bottom: 0.3rem solid #029FB4;
 }
 
-.menu li:hover a
+.menu :deep(li:hover a)
 {
   color: #1EAEDB;
 }
 
 @media (min-width: 775px)
 {
-  .menu
+  .menu :deep(li)
   {
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu li
-  {
-    display: inline-block;
+    @apply inline-block;
     width: auto;
   }
 
-  .menu li a
+  .menu :deep(li a)
   {
     padding: 1rem 1rem 1.3rem 1rem;
     border-bottom: none;
   }
 
-  .menu li.selected a
+  .menu :deep(li.selected a)
   {
     padding-bottom: 1rem;
   }

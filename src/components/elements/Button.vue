@@ -44,7 +44,6 @@ button
   color: #040138;
   text-align: center;
   font-size: 1rem;
-  font-weight: normal;
   line-height: 2rem;
   letter-spacing: .1rem;
   text-decoration: none;
@@ -83,7 +82,6 @@ button.button--primary.disabled
   background-color: #F2F2F2;
   border-color: #EAEAEA;
 }
-
 button.button--primary:hover,
 button.button--primary:focus
 {
@@ -99,14 +97,12 @@ button.button--secondary
   border-color: #898989;
   border-width: 1px;
 }
-
 button.button--secondary.disabled
 {
   color: #898989;
   background-color: #F2F2F2;
   border-color: #D5D5D5;
 }
-
 button.button--secondary:hover,
 button.button--secondary:focus
 {
@@ -115,4 +111,13 @@ button.button--secondary:focus
   border-color: #898989;
 }
 
-</style>/
+button.button--tertiary,
+button.button--tertiary.disabled,
+button.button--tertiary:hover,
+button.button--tertiary:focus
+{
+  color: #000;
+  background-color: #F2F2F2;
+  border-color: #898989;
+}
+</style>

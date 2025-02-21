@@ -16,6 +16,7 @@ const FooterMenuNav = ref([
   {url: '#', title: 'Templates'}
 ]);
 </script>
+
 <template>
   <div class="container m-auto">
     <div class="w-full lg:flex lg:flex-nowrap lg:justify-between">
@@ -38,15 +39,17 @@ const FooterMenuNav = ref([
 </template>
 
 <style scoped>
-.footer-navigation :deep(.menu)
+.footer-navigation :deep(nav ul)
 {
   font-size: 0.875rem;
 }
+
 .footer-navigation :deep(nav ul li a)
 {
   color: #646464;
   padding: 0.5rem;
 }
+
 .copyright
 {
   margin: 1rem 0;
