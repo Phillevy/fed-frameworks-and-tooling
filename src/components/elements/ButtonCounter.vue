@@ -1,5 +1,4 @@
 <script setup>
-import Icon from '@/components/elements/Button.vue'
 import Button from "@/components/elements/Button.vue";
 defineProps(
     {
