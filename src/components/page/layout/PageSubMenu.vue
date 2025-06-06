@@ -13,7 +13,7 @@ const SecondaryMenuNav = ref([
 
 <template>
   <div class="filters">
-    <div class="container m-auto">
+    <div class="container m-auto px-2">
       <div class="w-full flex flex-nowrap">
         <div class="content-end w-auto">
           <Navigation
@@ -26,10 +26,10 @@ const SecondaryMenuNav = ref([
   </div>
 </template>
 
-<style>
-  .filters
-  {
-    background-color: #040138;
-    color: #FFFFFF;
-  }
+<style scoped>
+.filters
+{
+  background-color: #040138;
+  color: #FFFFFF;
+}
 </style>

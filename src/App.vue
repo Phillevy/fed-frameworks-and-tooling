@@ -6,18 +6,14 @@ import ProductList from '@/components/ProductList.vue'
 </script>
 
 <template>
-  <header>
-    <PageHeader />
-  </header>
+  <PageHeader />
   <aside>
     <PageSubMenu />
   </aside>
   <main>
     <ProductList />
   </main>
-  <footer>
-    <PageFooter />
-  </footer>
+  <PageFooter />
 </template>
 
 <style scoped>

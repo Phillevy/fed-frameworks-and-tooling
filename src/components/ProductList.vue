@@ -466,7 +466,7 @@ function toggleFilterPanel()
 </script>
 
 <template>
-  <div class="container w-auto m-auto">
+  <div class="container w-auto m-auto px-2">
       <div class="page-navigation">
         <div class="justify-between flex">
           <Header title="Products" />

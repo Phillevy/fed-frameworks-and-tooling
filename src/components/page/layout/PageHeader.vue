@@ -15,37 +15,39 @@ const TopMenuNav = ref([
 </script>
 
 <template>
-  <div class="header">
-    <div class="container m-auto">
-      <div class="w-full flex flex-wrap">
-        <div class="content-end w-auto">
-          <Logo class="logo" />
-        </div>
-        <div class="content-end w-auto grow md:grow-0">
-          <Inventory class="inventory" />
-        </div>
-        <div class="content-end w-auto md:order-last">
-          <div class="user">
-            <div class="user-company">Volkswagon</div>
-            <div class="account">
-              <ButtonCounter
-                  title="KS"
-                  subtitle="2"
-                  id="apply-filter"
-                  class-name="button button--tertiary weight-bold m-0"
-              />
+  <header>
+    <div class="header">
+      <div class="container m-auto px-2">
+        <div class="w-full flex flex-wrap">
+          <div class="content-end w-auto">
+            <Logo class="logo" />
+          </div>
+          <div class="content-end w-auto grow lg:grow-0">
+            <Inventory class="inventory" />
+          </div>
+          <div class="content-end w-auto lg:order-last">
+            <div class="user">
+              <div class="user-company">Volkswagon</div>
+              <div class="account">
+                <ButtonCounter
+                    title="KS"
+                    subtitle="2"
+                    id="apply-filter"
+                    class-name="button button--tertiary weight-bold m-0"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div class="content-end w-full md:w-auto grow">
-          <Navigation
-              class-name="top-nav"
-              :navigation="TopMenuNav"
-          />
+          <div class="content-end w-full lg:w-auto grow">
+            <Navigation
+                class-name="top-nav"
+                :navigation="TopMenuNav"
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <style scoped>
@@ -53,7 +55,6 @@ const TopMenuNav = ref([
 {
   padding: 1rem 0 1.3rem 0;
 }
-
 .inventory
 {
   display: flex;
@@ -62,7 +63,6 @@ const TopMenuNav = ref([
   font-weight: bold;
   padding: 1rem 1rem 1.3rem 1rem;
 }
-
 .user
 {
   display: flex;
@@ -70,7 +70,6 @@ const TopMenuNav = ref([
   padding: 1rem 0 1.3rem 0;
   height: 2.7rem;
 }
-
 .user-company
 {
   padding-right: 1rem;
